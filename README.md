@@ -20,7 +20,40 @@ at MiCo Milano.</em>
 <b>
     [<a href="https://yucao16.github.io/CRDI/" target="_blank" style="text-decoration: none;">Project Page</a>]&nbsp;&nbsp;
 </b>
+<b>
+    [<a href="https://arxiv.org/pdf/2407.07249" target="_blank" style="text-decoration: none;">Paper</a>]&nbsp;&nbsp;
+</b>
 </p>
+
+## Usage
+
+### 1. Download Pre-trained Model
+Download [FFHQ 256*256 ckpt of Guided Diffusion from ddpm-segmentation](https://github.com/yandex-research/ddpm-segmentation) to `checkpoints/ddpm/ffhq.pt`
+
+### 2. Update Directory Paths
+Modify the path in following files:
+```
+./datasets/babies_target/babies.csv
+./scripts/fs_gradient_evaluate.py
+```
+
+### 3. Run Experiments
+In the file `main.sh`, we provide commands to reproduce experiments results on Babies.
+```
+bash main.sh
+```
+
+## Bibtex
+If you find this project useful in your research, please consider citing our paper:
+
+```
+@article{cao2024few,
+  title={Few-Shot Image Generation by Conditional Relaxing Diffusion Inversion},
+  author={Cao, Yu and Gong, Shaogang},
+  journal={arXiv preprint arXiv:2407.07249},
+  year={2024}
+}
+```
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
