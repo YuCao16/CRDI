@@ -1,0 +1,47 @@
+# Project default settings
+num_samples: 10
+num_evaluate: 5000
+model_path: "checkpoints/ddpm/ffhq.pt"
+csv_file: "datasets/babies_target/babies.csv"
+t_start: 5
+t_end: 15
+num_gradient: 1
+print_config: True
+category: "default"
+experiment_gradient_path: "test"
+normalization: True
+random_q_noise: False
+image_size: 256
+batch_size: 10
+use_x_0: True
+tqdm: True
+anneal_ptb: True
+anneal_scale: 0.2
+lpips_cluster_size: 100
+
+# Diffusion Default setting for FFHQ
+clip_denoised: True
+use_ddim: True
+classifier_scale: 2.0
+timestep_respacing: "25"
+num_channels: 256
+dropout: 0.1
+num_head_channels: 64
+num_res_blocks: 2
+resblock_updown: True
+attention_resolutions: "32,16,8"
+class_cond: False
+use_fp16: False
+use_scale_shift_norm: True
+num_heads: 4
+num_heads_upsample: -1
+channel_mult: ""
+use_checkpoint: False
+use_new_attention_order: False
+noise_schedule: "linear"
+learn_sigma: True
+diffusion_steps: 1000
+use_kl: False
+predict_xstart: False
+rescale_learned_sigmas: False
+rescale_timesteps: False
